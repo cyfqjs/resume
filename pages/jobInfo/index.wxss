@@ -1,0 +1,17 @@
+/* pages/jobInfo/index.wxss */
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.left_block{
+  border-left: 3px solid #53CAC3;
+  padding-left: 10px;
+}
+.add{
+  color: #53CAC3;
+}

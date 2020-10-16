@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="title">
+    <view class="left_block">工作经历</view>
+    <view>
+      <view bind:click='handlerAdd' class="add">+添加</view>
+    </view>
+  </view>
+
+
+
+
+  <!-- 新增工作简历 -->
+  <view wx:if="isNewWorkExperience">  
+
+  </view>
+</view>

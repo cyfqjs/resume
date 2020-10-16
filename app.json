@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/jobInfo/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/baseInfo/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "个人简历",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "images/home1.jpg",
+        "iconPath": "images/home.jpg",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/my1.jpg",
+        "iconPath": "images/my.jpg",
+        "pagePath": "pages/baseInfo/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">基本信息:</view>
+  <form class="form-submit">
+    <view class="name_block fx">
+     <view>姓名</view>
+     <view>
+       <input type="text" class="input_right" bind:input="handlerClickName"></input>
+     </view>
+    </view>
+    <view class="">
+      <van-cell title="性别" is-link value="{{ sex }}" bind:click="chooseSex" >
+      </van-cell>
+        <van-action-sheet show="{{issex}}" actions="{{ actions }}"  bind:select="chooseSexItem" bind:click-overlay="chooseSexCancel"/>
+    </view>
+    <view>
+      <van-cell title="出生日期" is-link value="{{  birth }}" bind:click="chooseDate">
+      </van-cell>
+      <van-popup show="{{ isshow }}" position="bottom" custom-style="height: 50%;" bind:close="chooseDatePopupClose"
+        bind:click-overlay="chooseDatePopupClose">
+        <van-datetime-picker type="date" value="{{ currentDate }}" min-date="{{ minDate }}"
+          bind:confirm="chooseDateConfirm" bind:cancel="chooseDateCancel" formatter="{{ formatter }}" />
+      </van-popup>
+    </view>
+    <view class="age_block fx">
+      <view>年龄</view>
+     <view>
+       {{age}}
+     </view>
+    </view>
+    <view class="phone_block fx">
+     <view>手机号</view>
+     <view>
+       <input type="text" class="input_right" bind:input="handlerClickPhone"></input>
+     </view>
+    </view>
+    <view class="email_block fx">
+     <view>邮箱</view>
+     <view>
+       <input type="text" class="input_right" bind:input="handlerClickEmail"></input>
+     </view>
+    </view>
+
+    <view>
+      <van-cell title="地址" is-link value="{{ address }}" bind:click="chooseAddress">
+      </van-cell>
+      <van-popup show="{{ isaddress }}" position="bottom" custom-style="height: 50%;" bind:close="chooseAddressPopupClose"
+        bind:click-overlay="chooseAddressPopupClose">
+        <van-area area-list="{{ areaList }}" bind:confirm="chooseAddressConfirm" />
+      </van-popup>
+    </view>
+     <van-button type="primary" class="next_button" bind:click="handleNext">下一步</van-button> 
+  </form>
+  <van-toast id="van-toast"></van-toast>
+</view>

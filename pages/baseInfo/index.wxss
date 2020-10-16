@@ -1,0 +1,24 @@
+
+/* 公共样式定义 */
+.fx{
+  display: flex;
+}
+/* 页面样式 */
+.title{
+  padding-left: 16px;
+  font-weight: bolder;
+}
+.name_block , .age_block , .phone_block, .email_block{
+  font-size: 14px;
+  padding: 10px 16px;
+  width: auto;
+  border-bottom: 1px solid #efe;
+  justify-content: space-between;
+}
+.input_right{
+  text-align: right;
+}
+.van-button--normal {
+  width: 100%;
+}
+
